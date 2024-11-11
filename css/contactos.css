@@ -1,0 +1,133 @@
+body {
+    background-image: url("../img/index/background.jpg");
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    div {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+        .verde {
+            margin-left: 1%;
+            color: lime;
+        }
+
+    }
+
+    nav {
+        width: 50%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        background-color: gray;
+        margin-bottom: 2%;
+
+        ul {
+            margin-bottom: 3px;
+            margin-right: 20px;
+
+            li {
+                transition: 0.5s;
+                margin-right: 20px;
+                margin-bottom: 10px;
+                border: 0px solid black;
+                border-radius:10px;
+                background-color: darkgray;
+                display: inline-flex;
+                list-style-type: none;
+                font-size: 25px;
+            }
+
+            li:last-child {
+                margin-right: 0;
+            }
+
+            li:hover {
+                transition: 0.5s;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+main {
+    .quem {
+        width: 50%;
+        margin: 0 auto;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: gray;
+        text-align: center;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px; 
+        margin: 20px auto;
+        padding: 20px;
+        background-color: blue;
+        opacity: 90%;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-form label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        animation: rgb_out_tab 5s infinite;
+        outline: 2px solid lime;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+    
+    .contact-form textarea {
+        resize: none; 
+    }
+    
+    .button {
+        font-family: "Oxanium", sans-serif;
+        width: 30%;
+        margin: 10px auto;
+        transition: 0.7s;
+        background-color: gray;
+        outline: auto;
+        outline-color: lime;
+        outline-width: 12px;
+        color: white;
+        padding: 5% 5%;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        font-size: 18px;
+        animation: grad_out 3.3s infinite;
+        height: auto;
+    }
+    
+    .button:hover {
+        transition: 0.4s;
+        font-size: 25px;
+        text-decoration-color: white;
+    }
+}

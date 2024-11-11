@@ -1,0 +1,113 @@
+body {
+    background-image: url("../img/index/background.jpg");
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    div {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+        .verde {
+            margin-left: 1%;
+            color: lime;
+        }
+
+    }
+
+    nav {
+        width: 50%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        background-color: gray;
+        margin-bottom: 2%;
+
+        ul {
+            margin-bottom: 3px;
+            margin-right: 20px;
+
+            li {
+                transition: 0.5s;
+                margin-right: 20px;
+                margin-bottom: 10px;
+                border: 0px solid black;
+                border-radius:10px;
+                background-color: darkgray;
+                display: inline-flex;
+                list-style-type: none;
+                font-size: 25px;
+            }
+
+            li:last-child {
+                margin-right: 0;
+            }
+
+            li:hover {
+                transition: 0.5s;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+main {
+    .quem {
+        width: 50%;
+        margin: 0 auto;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: gray;
+        text-align: center;
+    }
+
+    table {
+
+        margin-top: 5%;
+        background-color: blue;
+        border: 2px solid lime;
+        border-radius: 10px;
+        opacity: 90%;
+
+        .img_td {
+            width: 60%;
+            height: auto;
+        }
+
+        img {
+            height: auto;
+
+            max-width: 100%;
+        }
+
+        th {
+            width: 100%;
+            height: auto;
+        }
+        td {
+            transition: 1s;
+        }
+
+        td:not(.img_td){
+            width: 5%;
+            height: auto;
+        }
+
+        td:hover {
+            transition: 1s;
+            transform: scale(1.03);
+        }
+    }
+}
